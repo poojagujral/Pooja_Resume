@@ -1,0 +1,152 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.0.1, 11 September 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you'll need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+\setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkBrown}{HTML}{3F2A14}
+\definecolor{Gold}{HTML}{FFD700}
+%\colorlet{heading}{VividPurple}
+\colorlet{heading}{DarkBrown}
+\colorlet{heading-line}{Gold}
+\colorlet{accent}{DarkBrown}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{POOJA GUJRAL}
+\tagline{INSTRUMENTATION AND CONTROL ENGINEERING STUDENT}
+\photo{4.5cm}{pooja1.jpg}
+
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{poojalgujral287@gmail.com}
+   \phone{(+91)9999687334}
+
+   \location{11/25,West Patel Nagar, New Delhi, India}
+  %\homepage{ohhdennyservices.us}
+    \linkedin{linkedin.com/in/poojagujral}
+\github{github.com/poojagujral}
+\homepage{indeliblewritings.wordpress.com}
+  }
+
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-7cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cveventnew{\textbf{SB IEEE BVCOE}}{Chairperson at BVPIEEE-WIE}{Under the Women in Engineering(WIE) affinity group, organized WIEHack, 24-hour all women hackathon in October 2018 with over 100 women participants.}{August 2018 -- Present}{New Delhi, India}
+
+\divider
+
+\cveventnew{\textbf{THE OPTIMIST CITIZEN}}{Editorial Intern}
+{The nature of my work include searching positive stories of unsung heroes of the world for our media. Worked on 5+ stories and conducted interviews with the news subjects.}{December 2018 -- March 2019}{New Delhi, India}
+
+\divider
+
+\cveventnew{\textbf{EMBEDDED SYSTEMS, CYBORG LABS}}{Summer Training}{Interfacing hardware with software using different user interfaces like buttons, LEDs, touchscreen sensing, GSM and GPS modules etc. Programming was done in C++ to serve real-time operated environments.}{June 2017 -- July 2017}{New Delhi, India}
+
+\divider
+
+\cveventnew{\textbf{MACHINE LEARNING AND ARTIFICIAL INTELLIGENCE, BVCOE}}{Summer Training}{Used Python basics to make simple programs and worked on data sets from Kaggle. Delving into face recognition and deep neural networks for data representations and task-specific algorithms. }{June 2018 -- July 2018}{New Delhi, India}
+
+\divider
+
+\cveventnew{\textbf{ANDROID APP DEVELOPMENT}}{Winter Training}{ Using Java language, made native android apps on Android Studio. Design of Front end and back end, and use of Google APIs  were taught in a 5-day winter camp.}{December 2018- January 2019}{New Delhi, India}
+
+\divider
+
+\cveventnew{\textbf{BVCOE NSS}}{Public Speaking Head}{Class Representative in the session 2017-2018. Had been invited for the 3rd anniversary of Swachh Bharat Abhiyan at Vigyan Bhawan.}{August 2018 -- Present}{{New Delhi, India}}
+
+\divider
+
+
+  
+% \begin{itemize}
+% \item Appointed by the founder Larry Page in 2001 to lead the Product Management and User Interaction teams
+% \item Optimized Google's homepage and A/B tested every minor detail to increase usability (incl.~spacing between words, color schemes and pixel-by-pixel element alignment)
+% \end{itemize}
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads}
+% \end{itemize}
+
+% \cvsection{A Day of My Life}
+
+% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% % \wheelchart{outer radius}{inner radius}{
+% % comma-separated list of value/text width/color/detail}
+% \wheelchart{1.5cm}{0.5cm}{ 10/13em/accent!30/Sleeping \& dreaming about work, 
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/12em/accent!10/New York \& San Francisco Ballet Jawbone board member, 
+%   20/12em/accent!40/Spending time with family,
+%   5/8em/accent!20/Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+\clearpage
+
+%\cvsection[page2sidebar]{Volunteer}
+%\cvsection{Volunteer}
+
+%\nocite{*}
+
+%\printbibliography[heading=pubtype,title={\printinfo{\faMusic}{Words, Beats, \& Life, Inc}},type=misc]
+
+%\divider
+
+%\printbibliography[heading=pubtype,title={\printinfo{\faChild}{Ms. Mary's Helping Hands}}, type=book]
+
+
+\end{document}
